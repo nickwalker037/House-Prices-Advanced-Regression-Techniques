@@ -6,7 +6,7 @@ includes Ridge and Lasso regression models designed to minimize the RMSE of the 
 The Lasso method proved surprisingly successful for a simple model without any feature engineering, producing a mean RMSE of .1231 
 
 Second Submission:
-Here I inspected the value counts of each predictor variable in order to bin together values that didn't occur frequently. For example, in the 'LandContour' predictor variable, 89% of the homes were placed on ground that had a Level Contour, so I separated these homes from homes that are placed on either a banked, hillside, or depressed contour, and grouped the latter homes together. After some experimentation, I found that I got the best results when grouping together variables with >85% of one dominant value. 
+Here I added a correlation heatmap and inspected the value counts of each predictor variable in order to bin together values that didn't occur frequently. For example, in the 'LandContour' predictor variable, 89% of the homes were placed on ground that had a Level Contour, so I separated these homes from homes that are placed on either a banked, hillside, or depressed contour, and grouped the latter homes together. After some experimentation, I found that I got the best results when grouping together variables with >85% of one dominant value. 
 This method reduced the mean RSME to .1214 for the Lasso method. 
 
 
